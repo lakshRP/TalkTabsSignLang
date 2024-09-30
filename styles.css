@@ -1,48 +1,113 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+nav ul li {
+    margin-left: 20px;
 }
 
-h1 {
-    text-align: center;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
     color: #333;
 }
 
-form, .webcam-container {
-    margin-bottom: 30px;
+.intro, .features, .upload-section, .webcam-section, .about-section, .help-section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#response {
-    margin-top: 20px;
-    color: #007BFF;
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
-button {
+.cta-button {
+    display: inline-block;
     padding: 10px 20px;
     background-color: #007BFF;
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
-    margin-top: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item h3 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-video {
-    display: block;
+input[type="file"] {
+    margin: 20px 0;
+}
