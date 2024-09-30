@@ -3,29 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Language Encoder</title>
+    <title>Sign Language Recognition</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Sign Language Encoder</h1>
-
-        <!-- Form for uploading video -->
-        <form id="uploadForm" enctype="multipart/form-data">
-            <label for="videoInput">Upload Video:</label>
-            <input type="file" id="videoInput" accept="video/*">
-            <button type="submit">Upload and Encode</button>
-        </form>
-
-        <!-- Webcam capture for real-time processing -->
-        <div class="webcam-container">
-            <h3>Real-Time Encoding via Webcam</h3>
-            <video id="webcam" width="640" height="480" autoplay></video>
-            <button id="startWebcam">Start Webcam Encoding</button>
+    <header>
+        <div class="logo">
+            <h1>Sign Language Recognition App</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/upload">Upload Video</a></li>
+                <li><a href="/realtime">Real-Time Recognition</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div id="response"></div>
-    </div>
+    <section class="intro">
+        <h2>Welcome to the Sign Language Recognition Application</h2>
+        <p>
+            This application uses advanced machine learning algorithms to detect and recognize 
+            sign language gestures from videos or real-time webcam input. Our goal is to bridge 
+            the communication gap for the hearing and speech impaired.
+        </p>
+        <a class="cta-button" href="/upload">Get Started by Uploading a Video</a>
+    </section>
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>Upload Videos</h3>
+                <p>Upload pre-recorded sign language videos to detect and interpret gestures.</p>
+                <a href="/upload">Upload Video</a>
+            </div>
+            <div class="feature-item">
+                <h3>Real-Time Recognition</h3>
+                <p>Use your webcam for real-time sign language recognition directly in your browser.</p>
+                <a href="/realtime">Start Webcam</a>
+            </div>
+            <div class="feature-item">
+                <h3>Learn More</h3>
+                <p>Learn more about how the model works and the machine learning techniques behind it.</p>
+                <a href="/about">About Us</a>
+            </div>
+            <div class="feature-item">
+                <h3>Get Help</h3>
+                <p>Need help? Visit our help section for instructions and troubleshooting tips.</p>
+                <a href="/help">Help Center</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sign Language Recognition Project. All rights reserved.</p>
+    </footer>
 
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
