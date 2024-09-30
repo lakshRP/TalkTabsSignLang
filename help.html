@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Sign Language Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sign Language Recognition</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/upload">Upload Video</a></li>
+                <li><a href="/realtime">Real-Time Recognition</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="help-section">
+        <h2>Help Center</h2>
+        <h3>How to Use the App</h3>
+        <p>
+            To use the Sign Language Recognition app, follow these simple steps:
+        </p>
+        <ul>
+            <li><strong>Upload a Video:</strong> Navigate to the <a href="/upload">Upload Video</a> page, select a video file of sign language gestures, and click "Upload and Decode."</li>
+            <li><strong>Use Webcam:</strong> Go to the <a href="/realtime">Real-Time Recognition</a> page to start recognizing sign language gestures using your webcam.</li>
+        </ul>
+
+        <h3>Troubleshooting</h3>
+        <p>
+            If you encounter any issues, try the following solutions:
+        </p>
+        <ul>
+            <li><strong>Video Not Uploading:</strong> Ensure your video file is in a supported format (e.g., MP4, AVI) and the file size is reasonable.</li>
+            <li><strong>Webcam Not Working:</strong> Make sure your browser has permission to access your webcam. You may need to enable webcam access in your browser's settings.</li>
+        </ul>
+
+        <h3>Contact Support</h3>
+        <p>
+            If you need further assistance, feel free to reach out to our support team at <a href="mailto:support@signlanguagerecognition.com">support@signlanguagerecognition.com</a>.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sign Language Recognition Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
